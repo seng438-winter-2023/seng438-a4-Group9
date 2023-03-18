@@ -1,0 +1,266 @@
+{
+  "id": "baf833d8-0d33-4c2d-9c9e-3d708b5e2cd9",
+  "version": "2.0",
+  "name": "SENG 438 Ass4",
+  "url": "https://www.amazon.ca",
+  "tests": [{
+    "id": "6f5824d5-5892-4097-bb74-d1938e0332fd",
+    "name": "Search bar 1 ( value = Kindle (2022 release))",
+    "commands": [{
+      "id": "72f0ad65-3f02-4842-b6b0-d4f4808b59e5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4713e186-6bda-460d-bc58-1cfb9d99bd65",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1549x990",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7144918-e8d5-4994-bf0c-8d57d036ff55",
+      "comment": "",
+      "command": "click",
+      "target": "id=pageContent",
+      "targets": [
+        ["id=pageContent", "id"],
+        ["css=#pageContent", "css:finder"],
+        ["xpath=//div[@id='pageContent']", "xpath:attributes"],
+        ["xpath=//div[@id='a-page']/div[2]", "xpath:idRelative"],
+        ["xpath=//body/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a939d59-d58e-4817-88c6-d3c3b8f23986",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e90a2cd1-b1ef-43b6-93d9-8df03599d6e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Kindle (2022 release)"
+    }, {
+      "id": "637f7ca9-cd50-41ed-a362-984a02597756",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7a2281c8-ffaf-48e8-ad59-8f2e48e56aaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sg-col-4-of-24:nth-child(2) .s-image:nth-child(1)",
+      "targets": [
+        ["css=.sg-col-4-of-24:nth-child(2) .s-image:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='Kindle (2022 release) – The lightest and most compact Kindle, now with a 6” 300 ppi high-resolution display, and 2x the st...']", "xpath:img"],
+        ["xpath=//div[@id='search']/div/div/div/span/div/div[2]/div/div/div/div/div[2]/span/a/div/img", "xpath:idRelative"],
+        ["xpath=//a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c64d06d5-00ce-44d0-b4d0-11a5601a2e7a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#a-autoid-9 .a-button-input",
+      "targets": [
+        ["css=#a-autoid-9 .a-button-input", "css:finder"],
+        ["xpath=(//input[@type='submit'])[44]", "xpath:attributes"],
+        ["xpath=//span[@id='a-autoid-9']/span/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/ul/li[9]/span/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecd476ed-4562-40a1-b7dd-f0f432b81e3e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#a-autoid-9 .a-button-input",
+      "targets": [
+        ["css=#a-autoid-9 .a-button-input", "css:finder"],
+        ["xpath=(//input[@type='submit'])[44]", "xpath:attributes"],
+        ["xpath=//span[@id='a-autoid-9']/span/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/ul/li[9]/span/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "111748f7-abac-4293-aa07-85998526a3f4",
+    "name": "Change language",
+    "commands": [{
+      "id": "0de8fa39-d1b5-4ca7-836d-8f2edb740c5d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90451cba-976a-41d8-a348-dc9ac4636082",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1549x990",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d8a4b03-f4af-4bbd-b44b-31b51e25edd3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icp-nav-link-inner > .nav-line-2",
+      "targets": [
+        ["css=.icp-nav-link-inner > .nav-line-2", "css:finder"],
+        ["xpath=//a[@id='icp-nav-flyout']/span/span[2]", "xpath:idRelative"],
+        ["xpath=//span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fbb198f-8c75-4135-8188-f62727222d4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-row:nth-child(6) .a-icon",
+      "targets": [
+        ["css=.a-row:nth-child(6) .a-icon", "css:finder"],
+        ["xpath=//div[@id='icp-language-settings']/div[3]/div/label/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div/label/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1801254d-1973-49ab-b3c2-4a632a115f5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-button-input",
+      "targets": [
+        ["css=.a-button-input", "css:finder"],
+        ["xpath=(//input[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//span[@id='icp-save-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8b82cc43-be82-4f93-8686-de8635c0de04",
+    "name": "Book price sort",
+    "commands": [{
+      "id": "12add105-e80c-4ee8-9826-c58cac292b46",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e7a64d5-29b0-4536-8b99-f5ca630a5827",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1549x990",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4481743f-c1bb-48d1-bdec-19c6c1f1f527",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac2ea864-1feb-4762-b212-74c40a6a2c68",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "book"
+    }, {
+      "id": "92dd7060-c908-42de-8313-b9afe7e4ac9b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ab781471-6fa6-4161-b45b-4190cf7e204f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-dropdown-label",
+      "targets": [
+        ["css=.a-dropdown-label", "css:finder"],
+        ["xpath=//span[@id='a-autoid-0-announce']/span", "xpath:idRelative"],
+        ["xpath=//span/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e468b2b2-7727-4faf-8271-c51b23b6ff1f",
+      "comment": "",
+      "command": "click",
+      "target": "id=s-result-sort-select_2",
+      "targets": [
+        ["id=s-result-sort-select_2", "id"],
+        ["linkText=Price: High to low", "linkText"],
+        ["css=#s-result-sort-select_2", "css:finder"],
+        ["xpath=//a[contains(text(),'Price: High to low')]", "xpath:link"],
+        ["xpath=//a[@id='s-result-sort-select_2']", "xpath:attributes"],
+        ["xpath=//div[@id='a-popover-2']/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[58]", "xpath:href"],
+        ["xpath=//div[4]/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Price: High to low')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "545d35b2-3403-477c-8e9b-0ed765746459",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6f5824d5-5892-4097-bb74-d1938e0332fd"]
+  }],
+  "urls": ["https://www.amazon.ca/"],
+  "plugins": []
+}

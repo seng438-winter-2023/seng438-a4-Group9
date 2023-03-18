@@ -1,0 +1,778 @@
+{
+  "id": "c56a7c2b-a566-41e8-8932-addc053ee9b7",
+  "version": "2.0",
+  "name": "Amazon",
+  "url": "https://www.amazon.ca/",
+  "tests": [{
+    "id": "d037148f-666e-46f8-bf60-4b22c8d63aa5",
+    "name": "Login - Valid",
+    "commands": [{
+      "id": "acbf9687-0339-40b7-8f66-daba190bfb71",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.ca%2Fgp%2Fyourstore%2Fhome%3Fpath%3D%252Fgp%252Fyourstore%252Fhome%26signIn%3D1%26useRedirectOnSuccess%3D1%26action%3Dsign-out%26ref_%3Dnav_AccountFlyout_signout&openid.assoc_handle=caflex&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db590759-b843-4dd9-ae37-8e2d09ed8d42",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1316x701",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c39b3705-9c51-41ac-982b-3d5294f53290",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "thevinmahawatte2@gmail.com"
+    }, {
+      "id": "9cddac0b-ace4-4499-ad4b-c5a62ecebd54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-button-inner > #continue",
+      "targets": [
+        ["css=.a-button-inner > #continue", "css:finder"],
+        ["xpath=//input[@id='continue']", "xpath:attributes"],
+        ["xpath=//span[@id='continue']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4392a334-8513-466e-8e0e-8c4027eef183",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "abc1234"
+    }, {
+      "id": "6ffd7218-1139-4a3c-8e38-fa15e836aa5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInSubmit",
+      "targets": [
+        ["id=signInSubmit", "id"],
+        ["css=#signInSubmit", "css:finder"],
+        ["xpath=//input[@id='signInSubmit']", "xpath:attributes"],
+        ["xpath=//span[@id='auth-signin-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5541ee39-1603-47a3-ba9c-1414c5e84988",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "72eb5b5b-c2fe-400d-9825-3fdf71a0395c",
+    "name": "Search",
+    "commands": [{
+      "id": "d5ed26ca-79b5-4c54-9763-df8aec30b383",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d31d23cd-708f-43d8-8410-99e95949c3e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1316x701",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e51f650-8adb-4298-a98e-fa5c981f4c8f",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0db3e1e7-5bfa-47ff-9053-2046536b8e66",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Ice cream maker"
+    }, {
+      "id": "f7c5fa90-d987-42bf-b14e-c810b7eaf4ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "76f16c96-1e78-4e3e-8995-8fc6e308b1a9",
+    "name": "Login - Invalid Username",
+    "commands": [{
+      "id": "45c761c6-2b2c-4f11-8309-11db19a5dfaa",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.ca%2Fgp%2Fyourstore%2Fhome%3Fpath%3D%252Fgp%252Fyourstore%252Fhome%26signIn%3D1%26useRedirectOnSuccess%3D1%26action%3Dsign-out%26ref_%3Dnav_AccountFlyout_signout&openid.assoc_handle=caflex&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4edcd24-1f15-4875-8cba-fcecdd41c803",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x684",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9b35965-acdb-4d9e-b946-b8260415d2e6",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "thevinmahawatte"
+    }, {
+      "id": "41055eb8-99d9-45f2-8eaa-102552e43fac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-button-inner > #continue",
+      "targets": [
+        ["css=.a-button-inner > #continue", "css:finder"],
+        ["xpath=//input[@id='continue']", "xpath:attributes"],
+        ["xpath=//span[@id='continue']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91ded290-10ad-4479-be3b-09d357bd361b",
+      "comment": "",
+      "command": "click",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05c6eb5b-4f79-4557-a5e6-51ae5db29404",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "thevinmahawatte2@gmail.com"
+    }, {
+      "id": "8991cb31-09f5-48d9-b3fb-505d596641fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-button-inner > #continue",
+      "targets": [
+        ["css=.a-button-inner > #continue", "css:finder"],
+        ["xpath=//input[@id='continue']", "xpath:attributes"],
+        ["xpath=//span[@id='continue']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf5c4763-3ec4-4375-979e-3104da5f6ea1",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "tim25170"
+    }, {
+      "id": "ea269d2b-ccbe-49b7-94af-e70cd0e8e922",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInSubmit",
+      "targets": [
+        ["id=signInSubmit", "id"],
+        ["css=#signInSubmit", "css:finder"],
+        ["xpath=//input[@id='signInSubmit']", "xpath:attributes"],
+        ["xpath=//span[@id='auth-signin-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "946377ac-eeb2-4f30-901f-003595caed81",
+    "name": "Add new address",
+    "commands": [{
+      "id": "5d16f7a1-33ed-4f3d-bb60-484181edcd18",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81973142-dc71-448a-9da4-6b4cd5378078",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1316x701",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf28c67c-bdf1-4f39-99a4-19d49bbfe85a",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-link-accountList-nav-line-1",
+      "targets": [
+        ["id=nav-link-accountList-nav-line-1", "id"],
+        ["css=#nav-link-accountList-nav-line-1", "css:finder"],
+        ["xpath=//span[@id='nav-link-accountList-nav-line-1']", "xpath:attributes"],
+        ["xpath=//a[@id='nav-link-accountList']/div/span", "xpath:idRelative"],
+        ["xpath=//a[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Hello, Thevin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41456d09-2208-4aa9-86e9-5e5ffe0f0bd1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ya-card-row:nth-child(3) > .ya-card-cell:nth-child(1) .a-spacing-none",
+      "targets": [
+        ["css=.ya-card-row:nth-child(3) > .ya-card-cell:nth-child(1) .a-spacing-none", "css:finder"],
+        ["xpath=//div[@id='a-page']/div[2]/div/div[3]/div/a/div/div/div/div[2]/h2", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/div/div/div/div[2]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Your Addresses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b5c4e06-eb6d-4b9d-9b97-95f6df3b032a",
+      "comment": "",
+      "command": "click",
+      "target": "id=ya-myab-plus-address-icon",
+      "targets": [
+        ["id=ya-myab-plus-address-icon", "id"],
+        ["css=#ya-myab-plus-address-icon", "css:finder"],
+        ["xpath=//div[@id='ya-myab-plus-address-icon']", "xpath:attributes"],
+        ["xpath=//a[@id='ya-myab-address-add-link']/div/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8045e899-d768-48d4-bf06-b6a31511125f",
+      "comment": "",
+      "command": "click",
+      "target": "id=address-ui-widgets-enterAddressFullName",
+      "targets": [
+        ["id=address-ui-widgets-enterAddressFullName", "id"],
+        ["name=address-ui-widgets-enterAddressFullName", "name"],
+        ["css=#address-ui-widgets-enterAddressFullName", "css:finder"],
+        ["xpath=//input[@id='address-ui-widgets-enterAddressFullName']", "xpath:attributes"],
+        ["xpath=//div[@id='address-ui-widgets-enterAddressFormContainer']/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6399f87d-8e0a-42da-a54a-f41bc80d1bc3",
+      "comment": "",
+      "command": "type",
+      "target": "id=address-ui-widgets-enterAddressFullName",
+      "targets": [
+        ["id=address-ui-widgets-enterAddressFullName", "id"],
+        ["name=address-ui-widgets-enterAddressFullName", "name"],
+        ["css=#address-ui-widgets-enterAddressFullName", "css:finder"],
+        ["xpath=//input[@id='address-ui-widgets-enterAddressFullName']", "xpath:attributes"],
+        ["xpath=//div[@id='address-ui-widgets-enterAddressFormContainer']/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Thevin Mahawatte"
+    }, {
+      "id": "63f075e7-644a-42b3-bb31-5c81891e8c75",
+      "comment": "",
+      "command": "click",
+      "target": "id=address-ui-widgets-enterAddressPhoneNumber",
+      "targets": [
+        ["id=address-ui-widgets-enterAddressPhoneNumber", "id"],
+        ["name=address-ui-widgets-enterAddressPhoneNumber", "name"],
+        ["css=#address-ui-widgets-enterAddressPhoneNumber", "css:finder"],
+        ["xpath=//input[@id='address-ui-widgets-enterAddressPhoneNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='address-ui-widgets-enterAddressFormContainer']/div/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f054f2a0-1ae4-4c94-b173-3fc4b8076965",
+      "comment": "",
+      "command": "type",
+      "target": "id=address-ui-widgets-enterAddressPhoneNumber",
+      "targets": [
+        ["id=address-ui-widgets-enterAddressPhoneNumber", "id"],
+        ["name=address-ui-widgets-enterAddressPhoneNumber", "name"],
+        ["css=#address-ui-widgets-enterAddressPhoneNumber", "css:finder"],
+        ["xpath=//input[@id='address-ui-widgets-enterAddressPhoneNumber']", "xpath:attributes"],
+        ["xpath=//div[@id='address-ui-widgets-enterAddressFormContainer']/div/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "8253650325"
+    }, {
+      "id": "dda8fc84-1cce-482b-8622-eebe1e96bd82",
+      "comment": "",
+      "command": "click",
+      "target": "id=address-ui-widgets-enterAddressLine1",
+      "targets": [
+        ["id=address-ui-widgets-enterAddressLine1", "id"],
+        ["name=address-ui-widgets-enterAddressLine1", "name"],
+        ["css=#address-ui-widgets-enterAddressLine1", "css:finder"],
+        ["xpath=//input[@id='address-ui-widgets-enterAddressLine1']", "xpath:attributes"],
+        ["xpath=//div[@id='address-ui-widgets-enterAddressFormContainer']/div/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a454312-eb04-4774-8df5-65448128d6ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=address-ui-widgets-enterAddressLine1",
+      "targets": [
+        ["id=address-ui-widgets-enterAddressLine1", "id"],
+        ["name=address-ui-widgets-enterAddressLine1", "name"],
+        ["css=#address-ui-widgets-enterAddressLine1", "css:finder"],
+        ["xpath=//input[@id='address-ui-widgets-enterAddressLine1']", "xpath:attributes"],
+        ["xpath=//div[@id='address-ui-widgets-enterAddressFormContainer']/div/div/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": "26, Varston Place NW"
+    }, {
+      "id": "f3d19215-66f2-4ad1-af10-90ce49d8d01e",
+      "comment": "",
+      "command": "click",
+      "target": "id=address-ui-widgets-enterAddressCity",
+      "targets": [
+        ["id=address-ui-widgets-enterAddressCity", "id"],
+        ["name=address-ui-widgets-enterAddressCity", "name"],
+        ["css=#address-ui-widgets-enterAddressCity", "css:finder"],
+        ["xpath=//input[@id='address-ui-widgets-enterAddressCity']", "xpath:attributes"],
+        ["xpath=//div[@id='address-ui-widgets-enterAddressFormContainer']/div/div/div[12]/input", "xpath:idRelative"],
+        ["xpath=//div[12]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc641ad-c844-44c1-b89c-f9561ec1668e",
+      "comment": "",
+      "command": "type",
+      "target": "id=address-ui-widgets-enterAddressCity",
+      "targets": [
+        ["id=address-ui-widgets-enterAddressCity", "id"],
+        ["name=address-ui-widgets-enterAddressCity", "name"],
+        ["css=#address-ui-widgets-enterAddressCity", "css:finder"],
+        ["xpath=//input[@id='address-ui-widgets-enterAddressCity']", "xpath:attributes"],
+        ["xpath=//div[@id='address-ui-widgets-enterAddressFormContainer']/div/div/div[12]/input", "xpath:idRelative"],
+        ["xpath=//div[12]/input", "xpath:position"]
+      ],
+      "value": "Calgary"
+    }, {
+      "id": "604d9182-cf9c-46e7-8bce-40463c4fb2ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=#address-ui-widgets-enterAddressStateOrRegion .a-button-text",
+      "targets": [
+        ["css=#address-ui-widgets-enterAddressStateOrRegion .a-button-text", "css:finder"],
+        ["xpath=//span[@id='address-ui-widgets-enterAddressStateOrRegion']/span/span", "xpath:idRelative"],
+        ["xpath=//div[14]/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "403195ae-c17c-4501-8fdf-46c0499e25ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=address-ui-widgets-enterAddressStateOrRegion-dropdown-nativeId_0",
+      "targets": [
+        ["id=address-ui-widgets-enterAddressStateOrRegion-dropdown-nativeId_0", "id"],
+        ["linkText=Alberta", "linkText"],
+        ["css=#address-ui-widgets-enterAddressStateOrRegion-dropdown-nativeId_0", "css:finder"],
+        ["xpath=//a[contains(text(),'Alberta')]", "xpath:link"],
+        ["xpath=//a[@id='address-ui-widgets-enterAddressStateOrRegion-dropdown-nativeId_0']", "xpath:attributes"],
+        ["xpath=//div[@id='a-popover-2']/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[3]", "xpath:href"],
+        ["xpath=//div[3]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Alberta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b5277e6-d5bc-42f6-8701-6fa4e0f09311",
+      "comment": "",
+      "command": "click",
+      "target": "id=address-ui-widgets-enterAddressPostalCode",
+      "targets": [
+        ["id=address-ui-widgets-enterAddressPostalCode", "id"],
+        ["name=address-ui-widgets-enterAddressPostalCode", "name"],
+        ["css=#address-ui-widgets-enterAddressPostalCode", "css:finder"],
+        ["xpath=//input[@id='address-ui-widgets-enterAddressPostalCode']", "xpath:attributes"],
+        ["xpath=//div[@id='address-ui-widgets-enterAddressFormContainer']/div/div/div[16]/input", "xpath:idRelative"],
+        ["xpath=//div[16]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86d37d9f-a575-4156-9416-9ec2a44d19bf",
+      "comment": "",
+      "command": "type",
+      "target": "id=address-ui-widgets-enterAddressPostalCode",
+      "targets": [
+        ["id=address-ui-widgets-enterAddressPostalCode", "id"],
+        ["name=address-ui-widgets-enterAddressPostalCode", "name"],
+        ["css=#address-ui-widgets-enterAddressPostalCode", "css:finder"],
+        ["xpath=//input[@id='address-ui-widgets-enterAddressPostalCode']", "xpath:attributes"],
+        ["xpath=//div[@id='address-ui-widgets-enterAddressFormContainer']/div/div/div[16]/input", "xpath:idRelative"],
+        ["xpath=//div[16]/input", "xpath:position"]
+      ],
+      "value": "T3A 0B7"
+    }, {
+      "id": "a764d414-0d08-40d8-aa7a-24fd0cc202f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-button-input",
+      "targets": [
+        ["css=.a-button-input", "css:finder"],
+        ["xpath=(//input[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//span[@id='address-ui-widgets-form-submit-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b7a54f33-1b12-47f8-9b55-e9d16974453c",
+    "name": "Login - Invalid Password",
+    "commands": [{
+      "id": "2aa29e57-d5dd-48ca-a6e3-4ab684ceccf7",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.ca%2Fgp%2Fyourstore%2Fhome%3Fpath%3D%252Fgp%252Fyourstore%252Fhome%26signIn%3D1%26useRedirectOnSuccess%3D1%26action%3Dsign-out%26ref_%3Dnav_AccountFlyout_signout&openid.assoc_handle=caflex&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3d4f8a3-62e2-4dad-9fa0-19e599de528f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x684",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d21236e6-6a3a-40d0-b490-e56611c564b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "thevinmahawatte2@gmail.com"
+    }, {
+      "id": "3a2d727b-b190-4c07-a737-fa29999faddb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-button-inner > #continue",
+      "targets": [
+        ["css=.a-button-inner > #continue", "css:finder"],
+        ["xpath=//input[@id='continue']", "xpath:attributes"],
+        ["xpath=//span[@id='continue']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32e11fd0-3d37-423d-b07a-cec124ad4384",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "imm2517"
+    }, {
+      "id": "81830974-6e70-44e6-b908-29d09bf4df0c",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInSubmit",
+      "targets": [
+        ["id=signInSubmit", "id"],
+        ["css=#signInSubmit", "css:finder"],
+        ["xpath=//input[@id='signInSubmit']", "xpath:attributes"],
+        ["xpath=//span[@id='auth-signin-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf89d1b7-cbfc-4268-8c10-79157e8c9952",
+      "comment": "",
+      "command": "click",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9407c023-1698-4eb8-b48b-a364e44f6e92",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "tim25170"
+    }, {
+      "id": "64e7887a-6348-4d66-b5a2-b9918619a66a",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInSubmit",
+      "targets": [
+        ["id=signInSubmit", "id"],
+        ["css=#signInSubmit", "css:finder"],
+        ["xpath=//input[@id='signInSubmit']", "xpath:attributes"],
+        ["xpath=//span[@id='auth-signin-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "59053ef1-c8f7-48c1-a6ff-d26be42b6547",
+    "name": "Sign out",
+    "commands": [{
+      "id": "bcbb2b76-7b57-4508-91ac-44bd3a1730c4",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf526bfe-5010-4b62-a7b7-aec40ffeda60",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1316x701",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ebde48d-e9c8-4b4d-9915-09389ae3528f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#nav-link-accountList > .nav-line-2",
+      "targets": [
+        ["css=#nav-link-accountList > .nav-line-2", "css:finder"],
+        ["xpath=//a[@id='nav-link-accountList']/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Account & Lists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09cf068a-69b6-438e-9363-1693e787a445",
+      "comment": "",
+      "command": "click",
+      "target": "css=#nav-link-accountList > .nav-line-2",
+      "targets": [
+        ["css=#nav-link-accountList > .nav-line-2", "css:finder"],
+        ["xpath=//a[@id='nav-link-accountList']/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Account & Lists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74082ca4-48ad-41bf-a150-9b65956f9d41",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#nav-link-accountList > .nav-line-2",
+      "targets": [
+        ["css=#nav-link-accountList > .nav-line-2", "css:finder"],
+        ["xpath=//a[@id='nav-link-accountList']/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Account & Lists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "663dfd52-c3aa-42a7-8be6-df05fb1d2de3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#nav-link-accountList > .nav-line-2",
+      "targets": [
+        ["css=#nav-link-accountList > .nav-line-2", "css:finder"],
+        ["xpath=//a[@id='nav-link-accountList']/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Account & Lists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36a4385c-c9c0-4ce8-be0a-1fc1ddda2955",
+      "comment": "",
+      "command": "click",
+      "target": "css=#nav-item-signout > .nav-text",
+      "targets": [
+        ["css=#nav-item-signout > .nav-text", "css:finder"],
+        ["xpath=//a[@id='nav-item-signout']/span", "xpath:idRelative"],
+        ["xpath=//a[15]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4fdf2095-058d-476e-84ad-353c418208f1",
+    "name": "Change country and langage",
+    "commands": [{
+      "id": "1a63ec7a-c3f9-45de-9d34-8cd1bd7ea729",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b41ab5fe-3bf3-4ef4-82c0-12ba2d47e50f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1316x701",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a748572c-019b-4b65-9375-4ae7a3249449",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.nav-line-2 > div",
+      "targets": [
+        ["css=.nav-line-2 > div", "css:finder"],
+        ["xpath=//a[@id='icp-nav-flyout']/span/span[2]/div", "xpath:idRelative"],
+        ["xpath=//span[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a65f084e-dc6c-4694-a110-371c1d964815",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-line-2 > div",
+      "targets": [
+        ["css=.nav-line-2 > div", "css:finder"],
+        ["xpath=//a[@id='icp-nav-flyout']/span/span[2]/div", "xpath:idRelative"],
+        ["xpath=//span[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f999655c-6cdb-4f0f-b8cc-c048e5e9c071",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-row:nth-child(6) .a-icon",
+      "targets": [
+        ["css=.a-row:nth-child(6) .a-icon", "css:finder"],
+        ["xpath=//div[@id='icp-language-settings']/div[3]/div/label/i", "xpath:idRelative"],
+        ["xpath=//div[3]/div/label/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54d43c92-8c9f-4567-833c-aa6576f759f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-row:nth-child(4) .a-icon",
+      "targets": [
+        ["css=.a-row:nth-child(4) .a-icon", "css:finder"],
+        ["xpath=//div[@id='icp-language-settings']/div[2]/div/label/i", "xpath:idRelative"],
+        ["xpath=//label/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3df33390-447e-43e3-b6d4-ab4b52938ee1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-button-input",
+      "targets": [
+        ["css=.a-button-input", "css:finder"],
+        ["xpath=(//input[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//span[@id='icp-save-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "709822f6-e87d-4b2d-82c7-5bbd5789e450",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.\\_cropped-image-map_style_image-map__12oiu > a",
+      "targets": [
+        ["css=.\\_cropped-image-map_style_image-map__12oiu > a", "css:finder"],
+        ["xpath=//div[@id='Jy04prH_ZY3uymAL12h7Ug']/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dp/B07ZPMDF1M/ref=ods_gw_eng_d_h1_vicc_ram_caen/')]", "xpath:href"],
+        ["xpath=//li[3]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d5139caa-96cb-470d-bd56-2681bc5e7e1a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.amazon.ca/", "https://www.amazon.ca/ap/signin?openid.pape.max_auth_age=900&openid.return_to=https%3A%2F%2Fwww.amazon.ca%2Fgp%2Fyourstore%2Fhome%3Fpath%3D%252Fgp%252Fyourstore%252Fhome%26signIn%3D1%26useRedirectOnSuccess%3D1%26action%3Dsign-out%26ref_%3Dnav_AccountFlyout_signout&openid.assoc_handle=caflex&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"],
+  "plugins": []
+}
